@@ -1,0 +1,195 @@
+<html>
+<style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #05d7c2;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #8615d1;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #0ed3b9;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #1ccaf6;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #0cffe3;
+    border: 2px solid #00fff7;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: #f2f2f2;
+  padding: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: red;
+}
+
+.new-price {
+  font-weight: bold;
+  color: green;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  max-width: 100%;
+  max-height: 200px;
+}
+</style><head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">SIGN</a></li>
+        <li><a href="SERVICE.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input class="srch"  id="searchInput"  type="search" name="" placeholder="Type To text">
+      <a href="#"> <button onclick="search()" class="btn">Search</button></a>
+  </div>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <img src="pexels-rachel-claire-4577834.jpg" alt="Offre 1">
+      <h2>Offre de surf</h2>
+      <p>Ancien prix : <span class="old-price">250DH</span></p>
+      <p>Nouveau prix : <span class="new-price">200DH</span></p>
+    </div>
+
+    <div class="card">
+      <img src="pexels-oliver-sjöström-1098365.jpg" alt="Offre 2">
+      <h2>Offre de Diving</h2>
+      <p>Ancien prix : <span class="old-price">300dDH</span></p>
+      <p>Nouveau prix : <span class="new-price">250dDH</span></p>
+    </div>
+
+    <div class="card">
+      <img src="pexels-sergio-souza-3772239.jpg" alt="Offre 3">
+      <h2>Offre de boat racing</h2>
+      <p>Ancien prix : <span class="old-price">200DH</span></p>
+      <p>Nouveau prix : <span class="new-price">150DH</span></p>
+    </div>
+  </div><script src="script001.js"></script>
+</body>
+</html>
